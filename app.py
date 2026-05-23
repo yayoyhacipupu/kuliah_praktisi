@@ -33,12 +33,7 @@ if genre == ":rainbow[bu lina]":
 else:
     st.write("You didn't select comedy.")
 
-your-repository/
-├── pages/
-│   ├── page_1.py
-│   └── page_2.py
-└── your_app.py
-st.page_link("your_app.py", label="Home", icon="🏠")
-st.page_link("pages/page_1.py", label="Page 1", icon="1️⃣")
-st.page_link("pages/page_2.py", label="Page 2", icon="2️⃣", disabled=True)
-st.page_link("http://www.google.com", label="Google", icon="🌎")
+col1, col2, col3 = st.columns(3)
+col1.metric("Temperature", "32 °C", "1.2 °F")
+col2.metric("Wind", "9 mph", "-8%")
+col3.metric("Humidity", "86%", "4%")
