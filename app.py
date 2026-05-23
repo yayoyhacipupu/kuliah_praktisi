@@ -22,7 +22,14 @@ if middle.button("Aisy", icon="😃", width="stretch"):
     middle.markdown("You clicked the Aisy.")
 if right.button("Divi", icon=":material/mood:", width="stretch"):
     right.markdown("You clicked the Divi.")
- agree = st.checkbox("I agree")
 
-if agree:
-    st.write("Great!")
+genre = st.radio(
+    "What's your favorite dosen",
+    [":rainbow[bu lina]", "***kak roma***", "pak edi"],
+)
+
+if genre == ":rainbow[bu lina]":
+    st.write("You selected comedy.")
+else:
+    st.write("You didn't select comedy.")
+
