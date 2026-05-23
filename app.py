@@ -22,3 +22,7 @@ if middle.button("Aisy", icon="😃", width="stretch"):
     middle.markdown("You clicked the Aisy.")
 if right.button("Divi", icon=":material/mood:", width="stretch"):
     right.markdown("You clicked the Divi.")
+  agree = st.checkbox("YUP")
+
+if agree:
+    st.write("yupsyups!")
