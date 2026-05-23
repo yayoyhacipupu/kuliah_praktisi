@@ -39,3 +39,4 @@ col2.metric("Wind", "9 mph", "-8%")
 col3.metric("Humidity", "86%", "4%")
 st.balloons()
 st.snow()
+
