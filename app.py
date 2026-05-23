@@ -15,3 +15,13 @@ st.caption("Made with ❤️ using Streamlit")
 st.write("Hello, *World!* :sunglasses:")
 color = st.color_picker("Pick A Color", "#c92580")
 st.write("The current color is", color)
+left, middle, right = st.columns(3)
+if left.button("Hanna", width="stretch"):
+    left.markdown("You clicked the Hanna.")
+if middle.button("Aisy", icon="😃", width="stretch"):
+    middle.markdown("You clicked the Aisy.")
+if right.button("Divi", icon=":material/mood:", width="stretch"):
+    right.markdown("You clicked the Divi.")
+
+Copy
+
